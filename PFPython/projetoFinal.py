@@ -1,5 +1,6 @@
 import requests
 from faker import Faker
+import pandas as pd
 from typing import Dict
 import random
 import json
@@ -7,8 +8,9 @@ import json
 urlCreateUser = "https://desafiopython.jogajuntoinstituto.org/api/users/"
 urlLogin = 'https://desafiopython.jogajuntoinstituto.org/api/users/login/'
 
+bdUsuarios = []
 
-def gerarUsuarioBD() -> Dict[str, str]:
+def gerarUsuario() -> Dict[str, str]:
     faker = Faker('pt-BR')
     ddd = random.randint(11, 97)
     number = faker.numerify(text='9########')
@@ -24,13 +26,11 @@ def gerarUsuarioBD() -> Dict[str, str]:
     return usuario
 
 def criarUsuario():
-    usuarioApi = gerarUsuarioBD()
+    usuarioApi = gerarUsuario()
     response = requests.post(urlCreateUser, json=usuarioApi)
     if response.status_code == 201:
         print('Usuário criado com sucesso.')
-        saveUser = open('Usuario_Criado', "w")
-        json.dump(usuarioApi, saveUser, indent=4)
-        saveUser.close()
+        bdUsuarios.append(usuarioApi)
         return usuarioApi
     else:
         print('Erro ao criar o usuário')
@@ -50,8 +50,12 @@ def logarUsuario(usuarioApi):
         print('Login negado. Verifique o Usuário ou senha e tente novamente.')
         print(responseLogin.status_code)
 
-    
 def verToken(loginSucedido):
     arquivoToken = open("Token de Acesso", "w")
     json.dump(loginSucedido, arquivoToken, indent=4)
     arquivoToken.close()
+
+def convToCSV(bdUsuarios):
+    usuariosCriados = pd.DataFrame(bdUsuarios)
+    print(usuariosCriados)
+    usuariosCriados.to_csv("Usuários criados",index=False)
