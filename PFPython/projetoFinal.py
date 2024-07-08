@@ -28,7 +28,9 @@ def criarUsuario():
     response = requests.post(urlCreateUser, json=usuarioApi)
     if response.status_code == 201:
         print('Usuário criado com sucesso.')
-        print(response.json)
+        saveUser = open('Usuario_Criado', "w")
+        json.dump(usuarioApi, saveUser, indent=4)
+        saveUser.close()
         return usuarioApi
     else:
         print('Erro ao criar o usuário')
