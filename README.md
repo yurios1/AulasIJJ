@@ -34,45 +34,27 @@ Relação de atividades do IJJ
 - Atividade: Calcular a idade dos pets pela idade do dono e o lucro por ano gerado pelo pet
 - Atividade: Calcular a média de 4 notas
 - Operadores Lógicos, comparação e de associação {(==) (!) (+=) (-=) (*=) (/=) (and) (or) (not) (in) (not in)}
-- Atividade: Crie um script com as seguintes instruções:
-Crie uma tupla com 5 dados
-
-
-bullet
-Altere a tupla para uma lista
-
-
-bullet
-Insira 2 dados extras a essa lista
-
-
-bullet
-Remova o primeiro dado da lista
-
-
-bullet
-Remova o último dado da lista
-
-
-bullet
-Faça um print com o primeiro dado da lista
-
-
-bullet
-Faça um print com a quantidade de dados da lista
-
-
-bullet
-Crie um dicionário com os seguintes dados:
-Nome, Idade, Profissão
-
-
-bullet
-Imprima somente o valor contido na chave Nome do dicionário
+- Atividade: Crie um script com as tuplas, listas e dicionários
 
 5. Aula 5
+- Estruturas Condicionais (if/elif/else - match/case)
+- Atividade: Criar um script para analisar a iadade do usuário
+- Atividade: Criar um script para dar descontos com base no valor da compra
+- Desafio: Criar um script para dar 1 mês de aulas para o aluno que frequentasse 21 dias seguidos.
+- Atividade de casa: Faça uma pesquisa sobre ESTRUTURAS DE REPETIÇÃO E ITERAÇÃO
+
 6. Aula 6
+- Estruturas de repetição
+- Atividade: Imprimir números pares de 1 a 1000
+- Atividade: Crie a estrutura de uma tabuada para um valor inserido imprimindo multiplicando de 1 a 10
+- Atividade: Crie um script com uma lista de frutas, e outra com alergias.
+- Atividade: Contagem até 5 com while
+- Extra: Criar um jogo de advinhar o número
+- Desafio: Identificar o email do IJJ em uma lista
+
 7. Aula 7
+- 
+
 8. Aula 8
 - Biblioteca Pandas e Faker
 - 
