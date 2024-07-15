@@ -1,0 +1,1 @@
+produto = input(f'Escolha seus produtos:\n{produto}').lower()
