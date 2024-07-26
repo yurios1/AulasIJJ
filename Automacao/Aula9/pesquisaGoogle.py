@@ -23,3 +23,5 @@ while check == False:
         if link.text == "Instituto Joga Junto":
             link.click()
             check = True
+
+

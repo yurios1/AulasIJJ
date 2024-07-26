@@ -4,21 +4,30 @@ import time
 
 browser = Edge()
 
-link = "https://page-test-selenium.s3.sa-east-1.amazonaws.com/index.html"
+def acessPage(link):
+    browser.get(link)
 
-browser.get(link)
+def findElement(by, name):
+    element = browser.find_element(by, name)
+    return element
 
-add_Element = browser.find_element(By.ID, "addElement")
-for i in range(12):
-    add_Element.click()
+def fElements(by, name, searched):
+    result = browser.find_elements(by, name)
+    check = False
+    while check == False:
+        for link in result:
+            if link.text == searched:
+                link.click()
+                check = True
 
-elementTree = browser.find_elements(By.TAG_NAME, "input")
-print(len(elementTree))
+def sendInfo(por, nome:str, mensagem:str, btnname, btn):
+    element = browser.find_element(por, nome)
+    element.send_keys(mensagem)
+    print('Mensagem inserida.')
+    browser.find_element(btn)
 
-for element in elementTree:
-    element.click()
-    print('Clicado')
+acessPage('https://www.google.com.br')
 
-time(3.0)
+time.sleep(6)
 
-browser.quit()
+selectedPage = sendInfo(By.NAME, 'q', 'Instituto Joga Junto', By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]')
