@@ -9,8 +9,8 @@ def soma(numbA, numbB):
 
 resultado_soma = soma(5,4)
 
+
 if resultado_soma == 8:
     print(f'Resultado: {resultado_soma}')
-
 else:
     print(f'O resultado não é 8. Resultado: {resultado_soma}')
