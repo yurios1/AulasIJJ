@@ -1,4 +1,5 @@
-###Criar uma lista de dados e, usando a biblioteca OS, interagir com o seu sistema operacional. 
+###Criar uma lista de dados e, usando a biblioteca OS, 
+# interagir com o seu sistema operacional. 
 # Além disso, também criará uma nova pasta para salvar o arquivo de texto txt.
 
 import os

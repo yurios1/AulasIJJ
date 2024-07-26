@@ -23,6 +23,7 @@ def contarVogais():
     contador = letraA + letraE + letraI + letraO
     return contador, letraA, letraE, letraI, letraO, letraU
 
+
 resultado = contarVogais()
 print(f"""
       O texto inserido tem {resultado[0]} vogais.

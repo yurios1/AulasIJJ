@@ -1,5 +1,6 @@
 import requests
 
+
 cepsAmigos = [42738320, 66815295, 14600971]
 
 def descobrirCidade(cep:int) -> str:
