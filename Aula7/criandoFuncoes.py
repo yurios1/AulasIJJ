@@ -9,6 +9,7 @@ def soma(numbA, numbB):
 
 resultado_soma = soma(5,4)
 
+
 if resultado_soma == 8:
     print(f'Resultado: {resultado_soma}')
 else:

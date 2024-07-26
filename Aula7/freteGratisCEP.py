@@ -11,7 +11,6 @@ def pegarEndereco(cep:int) -> dict:
         return {}
     return resultado
 
-
 def verificarFrete(resultado: dict) -> str:
         estadosNordeste = ["BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE"]
         if resultado["uf"] in estadosNordeste:

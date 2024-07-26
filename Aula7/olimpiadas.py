@@ -1,4 +1,3 @@
-
 def matriculas(numeroMAt: int, nome: str) -> str:
     if numeroMAt % 2 == 0:
         print(f'{nome}, você pertence ao time Azul.')
