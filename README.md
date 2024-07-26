@@ -1,6 +1,8 @@
 # Squad1-IJJ
-##Descrição
+##Descrição:
+
 Relação de atividades do Curso de Quality Assurance - Avançado do Instituto Joga Junto
+
 ---
 1. Aula 1
 ___
@@ -61,7 +63,10 @@ ___
 ---
 7. Aula 7
 ___
-- 
+- Atividade: Criando um contador de vogais inseridas
+- Atividade: Criar um ambiente virtual no Python
+- Atividade: Baixar biblioteca requests e enviar requisição para o ViaCEPAtividade para verificar teste grátis para o nordeste.
+- Desafio: Criar uma lista de dados e, usando a biblioteca OS, interagir com o seu sistema operacional. Além disso, também criará uma nova pasta para salvar o arquivo de texto txt.
 ---
 8. Aula 8
 ___
