@@ -67,6 +67,10 @@ ___
 - Atividade: Criar um ambiente virtual no Python
 - Atividade: Baixar biblioteca requests e enviar requisição para o ViaCEPAtividade para verificar teste grátis para o nordeste.
 - Desafio: Criar uma lista de dados e, usando a biblioteca OS, interagir com o seu sistema operacional. Além disso, também criará uma nova pasta para salvar o arquivo de texto txt
+- Atividade: Criar uma função para imprimir uma mensagem de boas vindas para nomes específicos
+- Atividade: Criar função para calcular preço total de uma compra com descontos 
+- Desafio: Olimpíadas de conhecimento, Criar uma função que divida  os alunos em 2 grupos Azul para par e amarelo para ímpar.
+- Atividade: Criar um script para inserir matricula de 5 digitos, e verificar se é par ou impar
 ---
 8. Aula 8
 ___
