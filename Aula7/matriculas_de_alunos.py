@@ -2,7 +2,7 @@
 
 idsMatriculados = []
 
-while len(idsMatriculados: list) < 5:
+while len(idsMatriculados) < 5:
     matriculaAluno = int(input('Digite sua matricula: '))
     idsMatriculados.append(matriculaAluno)
 
