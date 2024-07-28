@@ -74,6 +74,7 @@ ___
 ---
 8. Aula 8
 ___
+- Pesquisar sobre automação de testes
 - Biblioteca Pandas e Faker
 - 
 
